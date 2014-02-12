@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd steamclient
-rm -r ../generated
+rm -rf ../generated
 mkdir ../generated
 PROTOFILES=( "content_manifest" "encrypted_app_ticket" "iclient_objects" "steammessages_base" "steammessages_clientserver" )
 for protofile in "${PROTOFILES[@]}"
